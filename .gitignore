@@ -1,3 +1,8 @@
 #ignore data directory
 data/
 
+#ignore vim swap files
+*.swp
+
+#ignore weights, too big for github
+*.weights
