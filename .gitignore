@@ -6,3 +6,8 @@ data/
 
 #ignore weights, too big for github
 *.weights
+
+#ignore images
+*.png
+*.jpg
+*.jpeg
