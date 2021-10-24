@@ -118,8 +118,7 @@ for i, batch in enumerate(im_batches):
 	start = time.time()
 	if CUDA:
 		batch = batch.cuda()
-	
-	prediction = model(Variable(batch, volatile=True), CUDA)
+	prediction = model(batch, CUDA)
 	prediction = write_results(prediction, confidence, num_classes, nms_conf = nms_thresh)
 	
 	end = time.time()
